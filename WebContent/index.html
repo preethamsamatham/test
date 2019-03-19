@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form  method="post" action="LoginServlets" >
+Form<br/>
+
+UserName
+<input type="text" placeholder="Name" id="name" name="username"/><br/>
+PassWord
+<input type="password" placeholder="Password" id="pwd" name="password" class="ml-2 "/>
+<a href="#" onclick="showpass()"> <img src="https://cdn3.iconfind er.com/data/icons/digital-marketing/512/search_magnifier_lens_loupe_flat_icon-512.png" width="10px" height="10px" /></a><br/>
+
+<span id="span1"> </span><br/>
+<span id="span2"></span><br/>
+<input type="submit" value="submit">
+</form>
+
+
+<script>
+/*function validate(){
+	var username=document.getElementById("name").value;
+	var password=document.getElementById("pwd").value;
+	password=password.toLowerCase();
+	//console.log(username=="admin");
+	if(username=="admin" && password=="admin"){
+		document.getElementById("span1").innerHTML="success";
+		return true;
+	}
+	else if(username==""&&password==""){
+		document.getElementById("span1").innerHTML="plz enter correctly";
+		return false;
+	
+	}
+	else{
+		document.getElementById("span1").innerHTML="plz enter correct values";
+		return false;
+	}
+}*/	
+	
+	/*var pattern="^[A-Za-z]+$";
+	var patternpwd="^[A-Za-z]+$";
+	var username=document.getElementById("name").value;
+	var password=document.getElementById("pwd").value;
+	console.log(username);
+	
+	if(username.match(pattern)!=null && password.match(patternpwd)!=null){
+		document.getElementById("span1").innerHTML="success";
+		console.log(username);
+		return true;
+	}
+	else if(username.match(pattern)==null && password.match(patternpwd)==null){
+		document.getElementById("span1").innerHTML="Enter username and password";
+		
+		return false;
+	}
+	else if(username.match(pattern)==null){
+		document.getElementById("span1").innerHTML="Enter correct username";
+		return false;
+	}
+	else if(password.match(pattern)==null){
+		document.getElementById("span1").innerHTML="Enter correct Password";
+		return false;
+	}
+	else if(username=""){
+		document.getElementById("span1").innerHTML="Enter username";
+		return false;
+	}
+	else if(password=""){
+		document.getElementById("span1").innerHTML="Enter Password";
+		return false;
+	}
+	else{
+		document.getElementById("span1").innerHTML="Enter username & Password";
+		return false;
+	}
+	
+	
+	
+}*/
+function showpass(){
+	var r=document.getElementById("pwd");
+	if(r.type=="text"){
+		r.type="password";
+}
+	else{
+		r.type="text";
+		}
+	}
+
+</script>
+</body>
+</html>

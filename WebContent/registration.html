@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <title>
+            Form
+        </title>
+    </head>
+    <body>
+        <form>
+            <pre>
+                FirstName         :<input type="text" autofocus id="l1" value="username"  placeholder="FirstName" onchange="change1()" oninput="change2()" pattern="[A-Za-z]+"/></br>
+               <!--<span id="sp5"> </span><br/>
+                <span id="sp6"> </span><br/> -->
+                LastName          :<input type="text" id="l2" onchange="validateName(this)"/><br>
+                :<span id="sp8"></span><br/>
+                Email             :<input type="text" id="em"/></br>
+
+                PassWord          :<input type="password" id="pws"/>
+
+                Gender    :<input type="radio" name="gender" value="male" class="c1" onchange="displayRadio()"/> Male
+                           <input type="radio" name="gender" value="female"  class="c1" onchange="displayRadio()"/> Female
+                           <input type="radio" name="gender" value="other"  class="c1" onchange="displayRadio()"/> Other</br>
+
+               <!--              <span id="sp7"> </span>-->
+           
+        Cities lived in:<input type="checkbox" name="cities1" value="Bengaluru" class="c2 ml-4">Bengaluru
+                           <input type="checkbox" name="cities2" value="Hyderabad" class="c2"> Hyderabad</br>
+                   Address:<textarea name="comments" size="10" ></textarea></br>
+              Technologies:<select multiple>
+                                <option name="python" value="Python" class="c3">Python</option>
+                                <option name="html" value="html" class="c3">Html</option>
+                                <option name="css" value="css" class="c3">Css</option> 
+                            </select></br></br>
+                </pre>            
+                <button type="submit">Submit Form</button> 
+                <Button type="reset">Reset Form</Button>
+                <button type="button" onclick="callMe()">click Me</button>  
+                
+                    your name and password is :
+                <span id="sp1">
+                
+                </span>  
+                gender :
+                <span id="sp2">
+                
+                    </span>  <br/>
+
+                checkbox :
+                <span id="sp3"></span><br/>
+
+                dropdown :
+                <br/>
+
+                <span id="sp4"></span><br/>
+                
+                
+            
+
+
+        </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </body>
+        
